@@ -1,0 +1,67 @@
+header {
+  padding: 16px;
+  /* position: sticky; */
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+header p {
+  margin: 0 auto;
+}
+
+textarea {
+  border-radius: 16px;
+  resize: none;
+  /* Remove default scrollbars in Internet Explorer */
+  overflow: auto;
+}
+
+.button {
+  border-radius: 99px;
+}
+
+/* Read More */
+.read-more-target,
+.read-more-trigger_opened {
+  display: none;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target,
+.read-more-state:checked ~ .read-more-trigger_opened {
+  display: block;
+}
+.read-more-state:checked ~ .read-more-trigger_closed {
+  display: none;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+p {
+  font-size: 16px;
+  color: #444;
+}
+
+.right-panel {
+  background-color: #eeeeee;
+  border-radius: 32px;
+  padding: 32px;
+}
+
+.orbit-container {
+  border-radius: 32px;
+}
+
+.orbit-bullets > button {
+  width: 10px;
+  height: 10px;
+}
