@@ -1,0 +1,291 @@
+* {
+  font-family: "Inter", Arial, sans-serif;
+  /* Fluid Responsive Font Size - 21px on desktop, 18px on tablet & 16px on mobile */
+  /* for a mobile of width 360px - font size would be Mobile: calc(15px + 0.390625 * 360px / 100) = 16.40625px */
+  font-size: calc(8px + 0.390625vw);
+  /* background: #FDFDFD; */
+}
+
+/* font-sizes, font-weight, button styles and states,
+ color variables, shadows, stroke, backgrounds,
+  heading, text, label etc. */
+
+h1 {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  color: var(--gray40);
+  padding: 0.5rem 1.3rem;
+}
+
+h2 {
+  font-size: calc(16px + 0.390625vw);
+  font-weight: bold;
+  color: var(--headingcolor);
+}
+
+h3 {
+  font-size: calc(10px + 0.390625vw);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+h4 {
+  font-size: calc(6px + 0.390625vw);
+  color: var(--gray40);
+}
+
+.sub-heading {
+  font-size: 1rem;
+  color:var(--subheadingcolor);
+}
+
+.title-style {
+  background-color: var(--title-bg) ;
+  border-radius: 1rem;
+}
+
+:root {
+  /*colors */
+  --gray40: #666666;
+  --dividercolor: #dadada;
+  --pitchblack: #000000;
+  --title-bg:#fff2cc;
+  --headingcolor: #1a1a1a;
+  --subheadingcolor: #4d4d4d;
+/* create design system */
+--box-shadow-sml: 0px 2px 2px -2px rgba(0, 0, 0, 0.10), 0px 2px 3px -1px rgba(0, 0, 0, 0.10);
+--box-shadow-md: 0px 2px 4px -2px rgba(0, 0, 0, 0.10), 0px 4px 6px -1px rgba(0, 0, 0, 0.10);
+--jury-card-padding: 1rem 1rem 1.5rem 1rem;
+
+}
+
+.grid-container {
+  margin-top: 2%;
+}
+
+/* top navigation bar - start */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  padding: 1% 2%;
+  position: sticky;
+  border-bottom: 1px solid var(--dividercolor);
+  box-shadow: var(--box-shadow-sml);
+}
+
+header a img {
+  width: 10rem;
+  height: 2.3rem;
+  margin: auto;
+  max-width: 100%;
+  max-height: 90%;
+}
+
+.navigation-elements {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.navigation-elements a {
+  color: var(--gray40);
+}
+
+.navigation-elements a:hover {
+  color: var(--pitchblack);
+}
+
+/* top navigation bar - end */
+
+/* side bar - start */
+.tabs-title span {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* side bar - end */
+
+.heading-section {
+  margin-bottom: 2rem;
+}
+
+/* designs section - start */
+#headingandalertsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+#alert-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#alert-section span {
+  color: red;
+}
+
+
+
+
+
+
+/* designs section - end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* brief section - start */
+.accordion-title {
+  color: var(--headingcolor);
+}
+
+.brief-image img {
+border-radius: 4px;
+}
+
+/* brief section - end */
+
+
+/* jury section - start */
+.card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /* margin-bottom: 1rem; */
+  margin: 0 1.9vw 1rem 0;
+  border: 1px solid #dadada;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: hidden;
+  /* color: #0a0a0a;  */
+  box-shadow: var(--box-shadow-md);
+  padding: var(--jury-card-padding);
+}
+
+.card > :last-child {
+  margin-bottom: 0; 
+}
+
+.card-divider-jury {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  /* new line */
+  justify-content: space-between;
+}
+
+.card-divider> :last-child {
+  margin-bottom: 0;
+}
+
+.card img {
+  border-radius: 0.25rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-section-jury p {
+  color: #444444;
+  margin: 0;
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icons-container img {
+  width: 28px;
+  height: auto;
+  padding: 0 0.2rem;
+}
+/* jury section - end */
+
+/* results section - start */
+.result-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.result-images img {
+  margin: 0 1rem 1rem 0;
+  width: 24vw;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(218, 218, 218);
+}
+
+.divider {
+  width: 90%;
+  height: 2px;
+  margin: 1rem 0 1rem 0;
+  border-bottom: 1px solid #dadada;
+}
+/* results section - end */
+
+
+
+/* footer - start */
+
+/* footer - end */
+
+@media only screen and (max-width: 840px) {
+  .result-images img {
+  width: 38vw;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width:780px) {
+  .result-images img {
+    width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+  .result-images img {
+  width: 80vw;
+  }
+}

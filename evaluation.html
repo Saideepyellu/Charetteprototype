@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evaluation Page</title>
+
+  <!-- Link to Zurb Foundation framework -->
+  <link rel="stylesheet" href="css/foundation.css" />
+
+  <!-- Link Local CSS File -->
+  <link rel="stylesheet" href="css/evaluation.css" />
+
+  <!-- Load Fontawesome -->
+  <script src="https://kit.fontawesome.com/1873bf8768.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="grid-x grid-padding-x grid-margin-x">
+    <!-- Images Orbit -->
+
+    <section class="orbit cell large-8" role="region" aria-label="Design Submission Sheets" data-orbit>
+      <!-- Arrows -->
+      <div class="orbit-wrapper">
+        <div class="orbit-controls">
+          <button class="orbit-previous">
+            <span class="show-for-sr">Previous Slide</span><i class="fa-solid fa-caret-left"></i>
+          </button>
+          <button class="orbit-next">
+            <span class="show-for-sr">Next Slide</span><i class="fa-solid fa-caret-right"></i>
+          </button>
+        </div>
+
+        <!-- Images -->
+        <ul class="orbit-container">
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="https://placehold.co/2000x2000?text=1"
+              alt="Page 1 - Metropolis Reborn: Envisioning a Sustainable Urban Haven" />
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="https://placehold.co/2000x2000?text=2" alt="Page 2" />
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="https://placehold.co/2000x2000?text=3" alt="Page 3" />
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="https://placehold.co/2000x2000?text=4" alt="Page 4" />
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation Dots -->
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0">
+          <span class="show-for-sr">First slide details.</span>
+          <span class="show-for-sr" data-slide-active-label>
+            Current Slide
+          </span>
+        </button>
+        <button data-slide="1">
+          <span class="show-for-sr">Second slide details.</span>
+        </button>
+        <button data-slide="2">
+          <span class="show-for-sr">Third slide details.</span>
+        </button>
+        <button data-slide="3">
+          <span class="show-for-sr">Fourth slide details.</span>
+        </button>
+      </nav>
+    </section>
+
+    <!-- Right Panel -->
+    <div class="right-panel large-4 right-panel">
+      <!-- Project Description -->
+      <section class="cell medium-4">
+        <!-- Project Title -->
+        <h1>Metropolis Reborn: Envisioning a Sustainable Urban Haven</h1>
+
+        <!-- Description 1000 character limit (around 150 words) -->
+        <div class="block-item-text">
+          <input type="checkbox" hidden class="read-more-state" id="read-more" />
+          <div class="read-more-wrap">
+            <p>
+              A sustainable and car-independent city design represents a
+              visionary approach to urban planning that prioritizes the
+              well-being of its residents and the environment.
+            </p>
+
+            <div class="read-more-target">
+              <p>
+                In this design, the aim is to create a vibrant, walkable, and
+                connected city that encourages active modes of transportation
+                while minimizing the need for private vehicles. By focusing on
+                efficient public transportation, pedestrian-friendly
+                infrastructure, and mixed-use zoning, this design fosters a
+                sense of community, reduces traffic congestion, and enhances
+                overall quality of life.
+              </p>
+              <p>
+                At the heart of this design is an extensive and reliable
+                public transportation network. The city would feature an
+                integrated system that seamlessly connects different
+                neighborhoods, employing buses, trams, light rail, and
+                subways. These modes of transport would be easily accessible
+                and offer convenient routes, ensuring that residents can
+                travel efficiently and affordably throughout the city.
+              </p>
+            </div>
+          </div>
+          <label for="read-more" class="read-more-trigger_closed button secondary tiny">
+            Read More
+          </label>
+          <label for="read-more" class="read-more-trigger_opened button secondary tiny">
+            Read Less
+          </label>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Evaluation -->
+      <section class="evaluation">
+        <h2>Overall Score: 76%</h2>
+
+        <!-- Evaluation Criteria 1 -->
+        <label for="sliderOutput1">Presentation</label>
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-10">
+            <div class="slider" data-slider data-initial-start="50">
+              <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+                aria-controls="sliderOutput1"></span>
+              <span class="slider-fill" data-slider-fill></span>
+            </div>
+          </div>
+          <div class="cell small-2">
+            <input type="number" id="sliderOutput1" />
+          </div>
+        </div>
+
+        <!-- Evaluation Criteria 2 -->
+        <label for="sliderOutput2">Impact</label>
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-10">
+            <div class="slider" data-slider data-initial-start="50">
+              <span class="slider-handle" data-slider-handle role="slider" tabindex="2"
+                aria-controls="sliderOutput2"></span>
+              <span class="slider-fill" data-slider-fill></span>
+            </div>
+          </div>
+          <div class="cell small-2">
+            <input type="number" id="sliderOutput2" />
+          </div>
+        </div>
+
+        <!-- Evaluation Criteria 3 -->
+        <label for="sliderOutput3">Practicality</label>
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-10">
+            <div class="slider" data-slider data-initial-start="50">
+              <span class="slider-handle" data-slider-handle role="slider" tabindex="3"
+                aria-controls="sliderOutput3"></span>
+              <span class="slider-fill" data-slider-fill></span>
+            </div>
+          </div>
+          <div class="cell small-2">
+            <input type="number" id="sliderOutput3" />
+          </div>
+        </div>
+
+        <!-- Evaluation Criteria 4 -->
+        <label for="sliderOutput4">Originality</label>
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-10">
+            <div class="slider" data-slider data-initial-start="50">
+              <span class="slider-handle" data-slider-handle role="slider" tabindex="4"
+                aria-controls="sliderOutput4"></span>
+              <span class="slider-fill" data-slider-fill></span>
+            </div>
+          </div>
+          <div class="cell small-2">
+            <input type="number" id="sliderOutput4" />
+          </div>
+        </div>
+
+        <!-- Feedback -->
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" rows="5" cols="50" placeholder="Write feedback for the participant...">
+          </textarea>
+
+        <!-- Save Button -->
+        <a href="portalhome.html">
+          <button class="button expanded">Save</button>
+        </a>
+      </section>
+    </div>
+  </div>
+
+  <!-- Load Zurb Foundation JS -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
